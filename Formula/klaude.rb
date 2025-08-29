@@ -3,9 +3,10 @@ class Klaude < Formula
   homepage "https://github.com/alfredtm/klaude"
   version "1.0.0"
   
-  # Since this is a script-based tool, we use a direct URL to the script
-  url "https://github.com/alfredtm/klaude/archive/v1.0.0.tar.gz"
-  sha256 "PLACEHOLDER_SHA256"
+  # Since this is a script-based tool, we use a direct URL to the repository
+  url "https://github.com/alfredtm/klaude/archive/refs/heads/main.tar.gz"
+  sha256 "HEAD"
+  head "https://github.com/alfredtm/klaude.git", branch: "main"
   
   depends_on "docker"
   
